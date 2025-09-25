@@ -1,0 +1,29 @@
+/* _combined.css - Zentrale Datei für alle Styles 
+* Import aller CSS-Dateien in der richtigen Reihenfolge
+*/
+
+/* Basis-Resets */
+@import url('/assets/styles/reset.css');
+
+/* Schriftarten und Icons */
+@import url('/assets/styles/fonts.css');
+@import url('/assets/styles/icons.css');
+
+/* Design-Tokens und Variablen */
+@import url('/assets/styles/variables.css');
+
+/* Basis-Stile */
+@import url('/assets/styles/base.css');
+
+/* Komponenten und Layouts */
+@import url('/assets/styles/buttons.css');
+@import url('/assets/styles/components.css');
+@import url('/assets/styles/header.css');
+@import url('/assets/styles/layouts.css');
+@import url('/assets/styles/footer.css');
+
+/* Zusätzliche Stile für spezifische Seiten */
+@import url('/assets/styles/pages/home.css');
+
+/* Additional styles */
+@import url('/assets/styles/eyecandy.css');

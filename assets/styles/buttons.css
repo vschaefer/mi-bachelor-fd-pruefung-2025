@@ -1,0 +1,54 @@
+/* Buttons
+  ############################################################################# */
+
+.button {
+  padding: var(--spacing-xs) var(--spacing-s);
+  border: none;
+  border-radius: var(--radius-s);
+  background-color: var(--color-primary-default);
+  color: #fff;
+  font-size: var(--font-size-m);
+  transition: background-color var(--transition-fast) ease-in-out;
+  cursor: pointer;
+
+  &.is-secondary {
+    background-color: var(--color-button-secondary);
+  }
+  
+  &:active, &:hover {
+    background-color: var(--color-button-hover);
+  }
+
+  &.is-large{
+    padding: var(--spacing-s) var(--spacing-m);
+  }
+
+}
+
+.round-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xs);
+  border: none;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color-primary-default);
+  color: #fff;
+  font-size: var(--font-size-l);
+  transform: scale(0.9);
+  transition: transform  var(--transition-fast) ease-in-out;
+
+  .icon{
+    margin: 0;
+  }
+
+  &:hover{
+    cursor: pointer;
+    transform: scale(1);
+  }
+
+  &:active {
+    background-color: var(--color-primary-400);
+  }
+}
